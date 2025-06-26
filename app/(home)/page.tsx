@@ -1,7 +1,10 @@
-export default async function Page() {
+import { APP_NAME } from '@/lib/constants'
+import React from 'react'
+
+const page = () => {
   return (
-    <div>
-      <h1 className='h1-bold text-center p-10'>Home Page Content</h1>
-    </div>
+    <div>Amazing Ecommerce , {APP_NAME}</div>
   )
 }
+
+export default page
