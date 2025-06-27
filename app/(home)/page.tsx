@@ -6,7 +6,6 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getAllCategories,getProductsByTag,getProductsForCard } from '@/lib/actions/product.actions'
 import data from '@/lib/data'
 import { toSlug } from '@/lib/utils'
-
 export default async function HomePage() {
     const todaysDeals = await getProductsByTag({ tag: 'todays-deal' })
     const bestSellingProducts = await getProductsByTag({ tag: 'best-seller' })
